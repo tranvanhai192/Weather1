@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="btnok">#215CF3</color>
+    <color name="date">#0000FF</color>
+    <color name="colorstatus">#8DF8FCFC</color>
+    <color name="colorsdark">#0C0C0C</color>
+    <color name="colorsred">#F5FF0000</color>
+    <color name="nen">#20B3B6B7</color>
+</resources>

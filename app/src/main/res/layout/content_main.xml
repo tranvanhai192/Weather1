@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nen"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="15sp"
+                android:text="@string/city"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:id="@+id/tvName"
+                android:textColor="@color/colorstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:text="@string/nations"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:id="@+id/tvCountry"
+                android:textColor="@color/colorstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:text="@string/status"
+                    android:id="@+id/tvStatus"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorsred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:text="@string/date"
+                    android:id="@+id/tvDay"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:id="@+id/imgicon"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvTemp"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:text="@string/temp"
+                    android:textSize="35sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/drops"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:text="@string/humidity"
+                        android:textColor="@color/colorstatus"
+                        android:textStyle="bold"
+                        android:id="@+id/tvhumidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/cloudy"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:text="@string/cloud"
+                        android:textStyle="bold"
+                        android:id="@+id/tvCloud"
+                        android:textColor="@color/colorstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/wind"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_30sdp" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:text="@string/wind"
+                        android:textStyle="bold"
+                        android:id="@+id/tvWind"
+                        android:textColor="@color/colorstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorsdark"
+                        android:textSize="15sp"
+                        android:text="@string/today"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:id="@+id/thu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorsdark"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:text="@string/sunrise"
+                        android:padding="@dimen/_2sdp"
+                        android:id="@+id/tvMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/colorsdark"
+                        android:textSize="15sp"
+                        android:text="@string/sunset"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:id="@+id/tvMax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linetemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_230sdp">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+                <ListView
+                    android:id="@+id/lstweather"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_330sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
